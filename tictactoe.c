@@ -31,24 +31,30 @@
         int b;
         if(t==1)
         {
-             printf("Player 1's move\n");
-             scanf("%d %d",&a, &b);
+             printf("Player 1's move\nEnter the row (1,2,3) : ");
+             scanf("%d",&a);
+             printf("\nEnter the column (1,2,3) : ");
+             scanf("%d",&b);
         if(tiarr[a-1][b-1]!=' ')
         {
             printf("The grid space is already occupied, please enter again!\n");
             tiinput(t);
         }
+        else
              tiarr[a-1][b-1]='X';
         }
         else
         {
-            printf("Player 2's move\n");
-            scanf("%d %d",&a, &b);
+           printf("Player 2's move\nEnter the row (1,2,3) : ");
+             scanf("%d",&a);
+             printf("\nEnter the column (1,2,3) : ");
+             scanf("%d",&b);
         if(tiarr[a-1][b-1]!=' ')
         {
             printf("The grid space is already occupied, please enter again!\n");
             tiinput(t);
         }
+        else
             tiarr[a-1][b-1]='O';
         }
     }
