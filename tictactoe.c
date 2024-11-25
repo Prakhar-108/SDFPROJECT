@@ -178,11 +178,15 @@
                 printf("%c ", tiarr[i][j]);
             }
             printf("\n");
-            for(int j=0; j<=8; j++)
+            if(i!=2)
             {
+              for(int j=0; j<=8; j++)
+             {
                 printf("-");
+             }
+              printf("\n");
             }
-            printf("\n");
+            
         }
     }
      void timain()
