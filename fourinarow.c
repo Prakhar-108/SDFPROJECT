@@ -15,7 +15,6 @@ void foinitialize()
         {
             foarr2[i]=9;
         }
-        printf("%d",foarr2[8]);
     }
 
 
@@ -132,12 +131,12 @@ void foinitialize()
              for(int j=0; j<9; j++)
             {
                 if(j!=8)
-                printf("%c |", foarr[i][j]);
+                printf("%c  |", foarr[i][j]);
                 else
-                printf("%c ", foarr[i][j]);
+                printf("%c  ", foarr[i][j]);
             }
             printf("\n");
-              for(int j=0; j<=25; j++)
+              for(int j=0; j<=35; j++)
              {
                 printf("-");
              }
@@ -146,7 +145,7 @@ void foinitialize()
             if(i==9)
             {   printf(" ");
                 for(int j=1; j<=9; j++)
-                printf("%d  ",j);
+                printf("%d   ",j);
                 printf("\n");
             }
             
